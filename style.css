@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  background: rgb(140, 6, 177);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  height: auto;
+}
+
+
+.perfil {
+ background: #d3f66b;
+ border-radius: 15px;
+ box-shadow: 10px 40px 12px rgba(145, 19, 19, 0.221);
+ padding: 20px;
+ text-align: center;
+ width: 300px;
+ transition: transform 1s ease, box-shadow 0.2s ease;
+}
+
+.perfil:hover {
+ transform:Rotate(2deg) translateX(10px);
+ box-shadow: 0 6px 18px rgb(10, 0, 86);
+}
+.perfil img {
+ width: max-content;
+ height: 200px;
+ border-radius: 15px;
+ object-fit: cover;
+ margin-bottom: 10px;
+}
+
+.perfil button {
+  margin-top: 10px;
+  background: #fdff86;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.perfil button:hover {
+  box-shadow: 0 0 36px #B18C06;
+}
+
+
+.contenedor {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+.imagen-circular {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.derecha {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.parrafos p {
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+}
+
+.botones button {
+  padding: 8px 16px;
+  font-size: 16px;
+  margin-top: 10px;
+  background: #fdff86;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.botones button:hover
+{
+  box-shadow: 0 0 36px #B18C06;
+}
+
+.imagenes-inferiores {
+  display: flex;
+  gap: 10px;
+}
+
+.imagenes-inferiores img {
+  width: 40px;
+  height: 20px;
+  border-radius: 50%;
+}
+ 
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+
+}
+
+.section-container {
+  display: flex;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+.article-container img
+{
+  align-self: center;
+  width: 50px;
+  height: 50px;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.details-container {
+  padding: 1rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+.botonesPaginas {
+  display: flex;
+  gap: 10px;
+}
+
+.botonesPaginas button {
+  padding: 4px 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  background: #fdff86;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.botonesPaginas button:hover
+{
+  box-shadow: 0 0 36px #B18C06;
+}
+.slider-container 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; 
+  max-width: 450px;   
+  margin: 40px auto;  
+  padding: 0 15px;    
+}
+.slider-wrapper 
+{
+  overflow: visible;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.slide 
+{
+  display: none;
+  width: 100%;
+}
+.slide.active 
+{
+  display: block;
+  animation: fadeEffect 0.6s ease-in-out;
+}
+.btn-flecha 
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fdff86;
+  color: #000000;
+  border: 2px solid #B18C06;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  user-select: none;
+  box-shadow: 0 0 10px rgba(140, 6, 177, 0.4);
+  z-index: 10;        
+}
+.btn-flecha.prev 
+{
+  left: -40px;
+}
+.btn-flecha.next 
+{
+  right: -40px;
+}
+.btn-flecha:hover 
+{
+  box-shadow: 0 0 36px #B18C06;
+  transform: translateY(-50%) scale(1.1);
+}
+@keyframes fadeEffect 
+{
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+
+
+

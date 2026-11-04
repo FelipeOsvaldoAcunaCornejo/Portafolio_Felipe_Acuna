@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Acuña | Desarrollador Unity</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Controlador.js" defer></script>
+</head>
+<body>
+     <header>
+    <div class="logo">Portafolio Felipe Acuña</div>
+    <nav>
+      <div class="botonesPaginas">
+        <a href="Pagina1.html"><button>Inicio</button></a>
+        <a href="Pagina2.html"><button>Sobre mí</button></a>
+        <a href="Pagina3.html"><button>Proyectos</button></a>
+        <a href="Pagina4.html"><button>Contacto</button></a>
+      </div>
+    </nav>
+  </header>
+
+
+ <div class="contenedor">
+    <div class="izquierda">
+      <img src="Imagenes/Perfil.png" alt="Image Perfil Dueño del Portafolio" class="imagen-circular">
+    </div>
+    <div class="derecha">
+      <div class="parrafos">
+        <p>Felipe Osvaldo Acuña Cornejo</p>
+        <p>Desarrollador Unity</p>
+        <p>Modelador 3D</p>
+      </div>
+      <div class="botones">
+        <a href="Descargables/Felipe Acuña CV.pdf" download="Felipe_Acuna_CV"><button>Descargar CV</button></a>
+        <a href="https://sketchfab.com/FelipeOsvaldoAcunaCornejo" target="_blank"><button>Ver Sketchfab</button></a>
+      </div>
+      <div class="imagenes-inferiores">
+        <a href="https://github.com/acunafelipe-lab?tab=repositories" target="_blank"> <img src="Imagenes/GithubLogo.png" alt="Github"> </a>
+        <a href="https://www.linkedin.com/in/felipe-osvaldo-acu%C3%B1a-cornejo-428b7937a/" target="_blank"> <img src="Imagenes/LinkedinLogo.png" alt="Linkedin"> </a>
+
+      </div>
+    </div>
+  </div>
+
+     <main>
+    <section id="Pag1" class="container slider-container">
+      
+      <button class="btn-flecha prev" onclick="navegarProyectos('Pag1',-1)">&#10094;</button>
+
+      <div class="slider-wrapper">
+        
+        <div class="perfil slide active">
+          <img src="Imagenes/RenderHabitacion.png" alt="Perfil 1" />
+          <h3>Modelo Habitación</h3>
+          <p>Rol: Modelador / Blender</p>
+          <a href="https://sketchfab.com/3d-models/diorama-habitacion-ce01ed9e751c4479966fcfb2e2a267a4" target="_blank"><button>Ver en Sketchfab</button></a>
+        </div>
+        <div class="perfil slide">
+          <img src="Imagenes/RenderCeleste.png" alt="Perfil 2" />
+          <h3>Diorama Celeste</h3>
+          <p>Rol: Modelador y texturizado/ Blender</p>
+          <a href="https://sketchfab.com/3d-models/dioramaceleste-db89a443d052495ebd5a76b8c746f52b" target="_blank"><button>Ver en Sketchfab</button></a>
+        </div>
+        <div class="perfil slide">
+          <img src="Imagenes/LaberintoImagen.png" alt="Perfil 3" />
+          <h3>Generador aleatorio de laberintos</h3>
+          <p>Rol: Modelador 3D y programador</p>
+          <a href="https://felipeosvaldoacunacornejo.github.io/GeneradorAleatorioDeLaberintos/" target="_blank"><button>Probar Proyecto</button></a>
+        </div>
+
+      </div>
+      <button class="btn-flecha next" onclick="navegarProyectos('Pag1',1)">&#10095;</button>
+
+    </section>
+  </main>
+
+  <section id="experience">
+    <h1 class="title">Conocimientos</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Software</h2>
+          <div class="article-container">
+            <article>
+              <img src="Imagenes/UnityLogo.png" alt="Unity icon" class="icon" />
+              <div>
+                <h3>Unity</h3>
+              </div>
+            </article>
+            <article>
+              <img src="Imagenes/BlenderLogo.png" alt="Blender icon" class="icon" />
+              <div>
+                <h3>Blender</h3>
+              </div>
+            </article>
+            <article>
+              <img src="Imagenes/CsharpLogo.png" alt="C# icon" class="icon" />
+              <div>
+                <h3>C#</h3>
+              </div>
+            </article>
+            <article>
+              <img src="Imagenes/GitLogo.png" alt="Git icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+              </div>
+            </article>
+            <article>
+              <img src="Imagenes/InglesLogo.png" alt="English icon" class="icon" />
+              <div>
+                <h3>Ingles C1</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
