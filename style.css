@@ -3,11 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+body
+{
+  background-color: #f7ebec;
+}
 
 header {
   width: 100%;
   padding: 20px;
-  background: rgb(140, 6, 177);
+  background: #59656f;
   color: rgb(255, 255, 255);
   font-weight: bold;
   display: flex;
@@ -27,7 +31,7 @@ header {
 
 
 .perfil {
- background: #d3f66b;
+ background: #59656f;
  border-radius: 15px;
  box-shadow: 10px 40px 12px rgba(145, 19, 19, 0.221);
  padding: 20px;
@@ -38,7 +42,7 @@ header {
 
 .perfil:hover {
  transform:Rotate(2deg) translateX(10px);
- box-shadow: 0 6px 18px rgb(10, 0, 86);
+ box-shadow: 0 6px 18px rgba(145, 19, 19, 0.221);
 }
 .perfil img {
  width: max-content;
@@ -50,8 +54,8 @@ header {
 
 .perfil button {
   margin-top: 10px;
-  background: #fdff86;
-  color: rgb(0, 0, 0);
+  background: #1d1e2c;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 8px;
   padding: 10px 20px;
@@ -60,7 +64,7 @@ header {
 }
 
 .perfil button:hover {
-  box-shadow: 0 0 36px #B18C06;
+  box-shadow: 0 0 36px #ac9fbb;
 }
 
 
@@ -99,8 +103,8 @@ header {
   padding: 8px 16px;
   font-size: 16px;
   margin-top: 10px;
-  background: #fdff86;
-  color: rgb(0, 0, 0);
+  background: #1d1e2c;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 8px;
   padding: 10px 20px;
@@ -109,7 +113,7 @@ header {
 }
 .botones button:hover
 {
-  box-shadow: 0 0 36px #B18C06;
+  box-shadow: 0 0 36px #ac9fbb;
 }
 
 .imagenes-inferiores {
@@ -169,7 +173,7 @@ section {
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border-color: #ddbdd5;
   text-align: center;
 }
 
@@ -193,8 +197,8 @@ section {
   padding: 4px 8px;
   font-size: 16px;
   margin-top: 10px;
-  background: #fdff86;
-  color: rgb(0, 0, 0);
+  background: #1d1e2c;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 8px;
   padding: 10px 20px;
@@ -203,7 +207,7 @@ section {
 }
 .botonesPaginas button:hover
 {
-  box-shadow: 0 0 36px #B18C06;
+  box-shadow: 0 0 36px #ac9fbb;
 }
 .slider-container 
 {
@@ -237,9 +241,9 @@ section {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #fdff86;
-  color: #000000;
-  border: 2px solid #B18C06;
+  background-color: #1d1e2c;
+  color: rgb(255, 255, 255);
+  border: 2px solid #ac9fbb;
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
@@ -247,7 +251,7 @@ section {
   border-radius: 50%;
   transition: all 0.3s ease;
   user-select: none;
-  box-shadow: 0 0 10px rgba(140, 6, 177, 0.4);
+  box-shadow: 0 0 10px rgba(89,101,111, 0.4);
   z-index: 10;        
 }
 .btn-flecha.prev 
@@ -260,7 +264,7 @@ section {
 }
 .btn-flecha:hover 
 {
-  box-shadow: 0 0 36px #B18C06;
+  box-shadow: 0 0 36px #ac9fbb;
   transform: translateY(-50%) scale(1.1);
 }
 @keyframes fadeEffect 
